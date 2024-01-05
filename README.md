@@ -16,6 +16,14 @@ Therefore, France Travel Recommander will help you to know where people should p
 The notebook recommends the best destinations and hotels based on the above variables at any given time.
 
 
+## Clone the repo
+
+To clone the repo, use the following command :
+
+```
+git clone https://github.com/Clementbroeders/france-travel-recommander.git
+```
+
 ## How does it work ?
 
 France Travel Recommander retrieves the datas from 3 sources :
@@ -31,4 +39,4 @@ Retrieve hotel data for each city
 
 All the data are compiled in this notebook, and the result is an interactive map of the 20 best hotels within the 5 selected cities.
 
-You can see an example on the following link : https://github.com/Clementbroeders/france-travel-recommander/plotly.html
+You can see the example by launching the following html file : plotly.html
