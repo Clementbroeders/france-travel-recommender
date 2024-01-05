@@ -1,6 +1,6 @@
-# France-Travel-Recommander
+# France Travel Recommander
 
-<img src="https://th.bing.com/th/id/OIG.lH3gebRlw2.bpx0iqRae?pid=ImgGn" alt="Image" width="30%" height="30%">
+<img src="https://th.bing.com/th/id/OIG.lH3gebRlw2.bpx0iqRae?pid=ImgGn" alt="Image" width="50%" height="50%">
 
 ## Introduction
 
@@ -29,4 +29,6 @@ Retrieve weather forecast for each city for the next 5 days
 3) Scraping - booking.com
 Retrieve hotel data for each city
 
-All the data are compiled in this notebook, and the result is a map of the 20 best hotels within the 5 selected cities.
+All the data are compiled in this notebook, and the result is an interactive map of the 20 best hotels within the 5 selected cities.
+
+You can see an example on the following link : https://github.com/Clementbroeders/france-travel-recommander/plotly.html
