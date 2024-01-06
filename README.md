@@ -1,6 +1,6 @@
 # France Travel Recommander
 
-<img src="https://th.bing.com/th/id/OIG.lH3gebRlw2.bpx0iqRae?pid=ImgGn" alt="Image" width="50%" height="50%">
+<img src="img/image.jpg" alt="Image" width="50%" height="50%">
 
 ## Introduction
 
@@ -39,4 +39,21 @@ Retrieve hotel data for each city
 
 All the data are compiled in this notebook, and the result is an interactive map of the 20 best hotels within the 5 selected cities.
 
-You can see the example by launching the following html file : plotly.html
+You can see the example by launching the following html file : ```plotly/example.html```
+
+## Step by step
+
+1) First, you need to open ```src/list_cities.csv``` and put the list of cities you want to check. 1 city per line.
+
+2) Ensure that all the necessary libraries are installed in your environment by running the following command from the terminal or command prompt:
+
+```
+pip install -r requirements.txt
+```
+
+3) Launch the notebook and run all cells until completion. The scraping part may encounter failures due to frequent changes on the booking.com website. Feel free to update the Scrapy scripts accordingly
+
+OPTIONAL
+4) f you wish to connect to your AWS S3, configure boto3 accordingly.
+
+5) If you wish to connect to your AWS RDS, ensure that the environment variables are set or modify the variables directly in the notebook.
