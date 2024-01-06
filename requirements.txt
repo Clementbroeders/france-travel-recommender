@@ -3,6 +3,5 @@ requests
 plotly
 fuzzywuzzy
 scrapy
-logging
 boto3
 sqlalchemy
