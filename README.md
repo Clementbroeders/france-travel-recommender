@@ -21,7 +21,7 @@ The notebook recommends the best destinations and hotels based on the above vari
 To clone the repo, use the following command :
 
 ```
-git clone https://github.com/Clementbroeders/france-travel-recommander.git
+git clone https://github.com/Clementbroeders/france-travel-recommender.git
 ```
 
 ## How does it work ?
@@ -53,7 +53,9 @@ pip install -r requirements.txt
 
 3) Launch the notebook and run all cells until completion. The scraping part may encounter failures due to frequent changes on the booking.com website. Feel free to update the Scrapy scripts accordingly
 
+
 OPTIONAL
-4) f you wish to connect to your AWS S3, configure boto3 accordingly.
+
+4) if you wish to connect to your AWS S3, configure boto3 accordingly.
 
 5) If you wish to connect to your AWS RDS, ensure that the environment variables are set or modify the variables directly in the notebook.
