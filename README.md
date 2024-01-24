@@ -2,60 +2,64 @@
 
 <img src="img/image.jpg" alt="Image" width="50%" height="50%">
 
+
 ## Introduction
 
-After doing some user research, the marketing team of France Travel Recommander discovered that **70% of their users who are planning a trip would like to have more information about the destination they are going to**. 
+Après avoir effectué des recherches auprès des utilisateurs, l'équipe marketing de France Travel Recommender a découvert que **70 % de leurs utilisateurs planifiant un voyage souhaiteraient obtenir plus d'informations sur leur destination.**
 
-In addition, user research shows that **people tend to be defiant about the information they are reading if they don't know the brand** which produced the content. 
+De plus, la recherche utilisateur montre que **les gens ont tendance à être méfiants à l'égard des informations qu'ils lisent s'ils ne connaissent pas la marque** qui a produit le contenu.
 
-Therefore, France Travel Recommander will help you to know where people should plan their next holidays. The application is based on real data about:
+Par conséquent, France Travel Recommender vous aidera à savoir où les gens devraient planifier leurs prochaines vacances. L'application est basée sur des données réelles concernant :
 
-* Weather 
-* Hotels in the area 
+* La météo
+* Les hôtels dans la région
 
-The notebook recommends the best destinations and hotels based on the above variables at any given time.
+Le notebook recommande les meilleures destinations et hôtels en fonction des variables ci-dessus à tout moment.
 
 
-## Clone the repo
+## Clone du repo
 
-To clone the repo, use the following command :
+Pour cloner le repo, utilisez la commande suivante :
 
 ```
 git clone https://github.com/Clementbroeders/france-travel-recommender.git
 ```
 
-## How does it work ?
 
-France Travel Recommander retrieves the datas from 3 sources :
+## Comment ça marche ?
+
+France Travel Recommender récupère les données à partir de 3 sources :
 
 1) API - Nominatim.org
-Retrieve longitude and latitude coordinates for each city
+
+    Récupération des coordonnées de longitude et de latitude pour chaque ville.
 
 2) API - openweathermap.org
-Retrieve weather forecast for each city for the next 5 days
+
+    Récupération des prévisions météorologiques pour chaque ville pour les 5 prochains jours.
 
 3) Scraping - booking.com
-Retrieve hotel data for each city
 
-All the data are compiled in this notebook, and the result is an interactive map of the 20 best hotels within the 5 selected cities.
+    Récupération des données d'hôtel pour chaque ville.
 
-You can see the example by launching the following html file : ```plotly/example.html```
+Toutes les données sont compilées dans ce notebook, et le résultat est une carte interactive des 20 meilleurs hôtels dans les 5 villes sélectionnées.
 
-## Step by step
-
-1) First, you need to open ```src/list_cities.csv``` and put the list of cities you want to check. 1 city per line.
-
-2) Ensure that all the necessary libraries are installed in your environment by running the following command from the terminal or command prompt:
-
-```
-pip install -r requirements.txt
-```
-
-3) Launch the notebook and run all cells until completion. The scraping part may encounter failures due to frequent changes on the booking.com website. Feel free to update the Scrapy scripts accordingly
+Vous pouvez voir l'exemple en lançant le fichier html suivant : `plotly/example.html`
 
 
-OPTIONAL
+## Etapes
 
-4) if you wish to connect to your AWS S3, configure boto3 accordingly.
+1) Tout d'abord, vous devez ouvrir src/list_cities.csv et y inscrire la liste des villes que vous souhaitez vérifier, une ville par ligne.
 
-5) If you wish to connect to your AWS RDS, ensure that the environment variables are set or modify the variables directly in the notebook.
+2) Assurez-vous que toutes les bibliothèques nécessaires sont installées dans votre environnement en exécutant la commande suivante depuis le terminal ou l'invite de commandes :
+
+    `pip install -r requirements.txt`
+
+3) Lancez le notebook et exécutez toutes les cellules jusqu'à la fin. La partie scraping peut rencontrer des échecs en raison des changements fréquents sur le site web de booking.com. N'hésitez pas à mettre à jour les scripts Scrapy en conséquence.
+
+
+### OPTIONNEL
+
+4) Si vous souhaitez vous connecter à votre AWS S3, configurez boto3 en conséquence.
+
+5) Si vous souhaitez vous connecter à votre AWS RDS, assurez-vous que les variables d'environnement sont définies ou modifiez les variables directement dans le carnet de notes.
